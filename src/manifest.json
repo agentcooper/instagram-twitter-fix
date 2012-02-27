@@ -1,0 +1,19 @@
+{
+  "name": "Twitter inline Instagram pictures",
+  "version": "0.2",
+  "description": "Fixing Instagram inline pictures in Twitter stream",
+  "homepage_url": "https://github.com/agentcooper/instagram-twitter-fix",
+  
+  "permissions": ["http://api.instagram.com/*"],
+  
+  "icons": { "128": "icon128.png" },
+  
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["jquery.min.js", "script.js"],
+      
+      "run_at": "document_end"
+    }
+  ]
+}
