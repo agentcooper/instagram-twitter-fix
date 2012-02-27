@@ -1,6 +1,4 @@
 $(document).ready(function(){
-  var api = "http://api.instagram.com/oembed?url=";
-  
   $('.tweet').live("mousedown", function(event) { // 'click' is not working, no idea why
     if (event.which != 1) return;
     
